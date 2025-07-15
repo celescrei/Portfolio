@@ -1,0 +1,25 @@
+footer {
+    margin: 60px 200px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    
+    nav {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: #00c5e4;
+            }
+        }
+    }
+}
