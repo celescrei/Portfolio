@@ -1,0 +1,72 @@
+.contacto {
+    position: relative;
+    background-color: #86d9ed;
+    max-width: 1300px;
+    margin: 100px auto;
+    border-radius: 34px;
+    display: flex;
+    padding: 20px;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 60px;
+        gap: 20px;
+
+        .contact-me {
+            h1 {
+                margin: 20px 0;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 3rem;
+                letter-spacing: 3px;
+                color: #009db7;
+            }
+            p {
+                color: #193035;
+                font-size: 1.1rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+    .input-group {
+        height: 50px;
+        width: 700px;
+    }
+
+    .boton {
+        margin-top: 25px;
+        background-color: #00c5e4;
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background-color: #009db7;
+        }
+    }
+
+    .info-contact {
+        gap: 20px; 
+
+        .ilustracion {
+            height: 200px;
+        }
+
+        .logos-contact {
+            display: flex;
+            img {
+                height: 100px;
+            }
+        }
+        
+    }
+}
+

@@ -1,0 +1,64 @@
+.line-aqua {
+    width: 510px;
+    height: 5px;
+    background-color: aqua;
+    transform: rotate(35deg);
+    left: 1230px;
+    position: relative;
+    border-radius: 5px;
+    bottom: 10px;
+}
+
+.line-celoscuro {
+    width: 1600px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #009db7;
+    transform: rotate(150deg);
+    position: relative;
+    right: 200px;
+}
+
+.line-celeste {
+    width: 900px;
+    height: 5px;
+    background-color: #207f92;
+    position: relative;
+    border-radius: 5px;
+    transform: rotate(120deg);
+    top: 420px;
+    left: 1020px;
+}
+
+.line-aqua2 {
+    width: 790px;
+    height: 5px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 5px;
+    transform: rotate(120deg);
+    top: 1660px;
+    left: 1110px;
+}
+
+.line-celeste2 {
+    width: 2075px;
+    height: 5px;
+    background-color: #1288a0;
+    position: relative;
+    border-radius: 5px;
+    transform: rotate(35deg);
+    top: 1200px;
+    right: 190px;
+}
+
+.line-celoscuro2 {
+    width: 1000px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #009db7;
+    transform: rotate(50deg);
+    position: relative;
+    right: 180px;
+    top: 1610px;
+}
