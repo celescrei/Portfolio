@@ -168,8 +168,8 @@ html {
   margin: 40px;
 }
 .proyectos .dpl-row .fotos-py .slider {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -192,13 +192,13 @@ html {
   font-size: 2rem;
   color: #00c5e4;
   cursor: pointer;
-  top: 340px;
+  top: 310px;
 }
 .proyectos .dpl-row .fotos-py #prev#prev, .proyectos .dpl-row .fotos-py #next#prev {
-  left: 620px;
+  left: 720px;
 }
 .proyectos .dpl-row .fotos-py #prev#next, .proyectos .dpl-row .fotos-py #next#next {
-  right: 20px;
+  right: 120px;
 }
 
 .sectionedu {
@@ -355,8 +355,8 @@ html {
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1655px;
-  left: 810px;
+  top: 1570px;
+  left: 910px;
 }
 
 .line-celeste2 {
@@ -371,7 +371,7 @@ html {
 }
 
 .line-celoscuro2 {
-  width: 830px;
+  width: 600px;
   height: 5px;
   border-radius: 5px;
   background-color: #009db7;
