@@ -42,22 +42,27 @@
                 <p>Do you have an idea or a project? You can write or find me on my social medias for a personalized attention. I'm open for new projects and colabs!</p>
             </div>
             <div class="contact-inputs">
-                <!-- input nombre y apellido -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Name" aria-label="Username">
-                </div>
+                <form action="https://formsubmit.co/creimerwork@gmail.com" method="POST" class="formulario-mail">
 
-                <!-- input email -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Username">
-                </div>
+                    <!-- input nombre y apellido -->
+                    <div class="input-group mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username">
+                    </div>
 
-                <!-- input comentario -->
-                <div class="input-group">
-                    <textarea class="form-control" placeholder="Put your comments..." aria-label="With textarea"></textarea>
-                </div>
+                    <!-- input email -->
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Username">
+                    </div>
 
-                <input type="submit" value="Enviar" class="boton">
+                    <!-- input comentario -->
+                    <div class="input-group">
+                        <textarea name="message" class="form-control" placeholder="Put your comment..." aria-label="With textarea"></textarea>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="submit" value="Enviar" class="boton">
+                </form>
             </div>
         </div>
         <div class="info-contact">
@@ -65,6 +70,7 @@
                 <img src="assets/img/ilustracion.png" alt="ilustracion" class="ilustracion">
             </div>
             <div class="logos-contact">
+                
                 <!-- telefono -->
                 <div class="socialm">
                     <img src="assets/img/logo-wpp.png" alt="wpp" class="logos">
