@@ -90,7 +90,8 @@ html {
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  text-decoration: underline 3.5px #00c5e4;
+  -webkit-text-decoration: underline 3.5px #00c5e4;
+          text-decoration: underline 3.5px #00c5e4;
 }
 .inicio .sobre-mi .descarga p {
   max-width: 300px;
@@ -136,7 +137,8 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   letter-spacing: 2px;
-  text-decoration: underline 4px #00c5e4;
+  -webkit-text-decoration: underline 4px #00c5e4;
+          text-decoration: underline 4px #00c5e4;
 }
 .proyectos .dpl-row {
   display: flex;
@@ -180,7 +182,8 @@ html {
 .proyectos .dpl-row .fotos-py .slider .img-proyect {
   min-width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .proyectos .dpl-row .fotos-py #prev, .proyectos .dpl-row .fotos-py #next {
   position: absolute;
@@ -206,7 +209,8 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   letter-spacing: 2px;
-  text-decoration: underline 4px #00c5e4;
+  -webkit-text-decoration: underline 4px #00c5e4;
+          text-decoration: underline 4px #00c5e4;
   text-align: center;
   margin: 40px;
 }
@@ -345,14 +349,14 @@ html {
 }
 
 .line-aqua2 {
-  width: 700px;
+  width: 790px;
   height: 5px;
   background-color: aqua;
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1460px;
-  left: 995px;
+  top: 1600px;
+  left: 925px;
 }
 
 .line-celeste2 {
@@ -375,6 +379,4 @@ html {
   position: relative;
   right: 180px;
   top: 1610px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
