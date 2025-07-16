@@ -192,12 +192,13 @@ html {
   font-size: 2rem;
   color: #00c5e4;
   cursor: pointer;
+  top: 340px;
 }
 .proyectos .dpl-row .fotos-py #prev#prev, .proyectos .dpl-row .fotos-py #next#prev {
-  left: 10px;
+  left: 620px;
 }
 .proyectos .dpl-row .fotos-py #prev#next, .proyectos .dpl-row .fotos-py #next#next {
-  right: 10px;
+  right: 20px;
 }
 
 .sectionedu {
@@ -320,10 +321,10 @@ html {
   height: 5px;
   background-color: aqua;
   transform: rotate(35deg);
-  left: 1240px;
+  left: 1225px;
   position: relative;
   border-radius: 5px;
-  bottom: 70px;
+  bottom: 100px;
 }
 
 .line-celoscuro {
@@ -344,22 +345,22 @@ html {
   border-radius: 5px;
   transform: rotate(120deg);
   top: 230px;
-  left: 705px;
+  left: 590px;
 }
 
 .line-aqua2 {
-  width: 790px;
+  width: 800px;
   height: 5px;
   background-color: aqua;
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1600px;
-  left: 925px;
+  top: 1655px;
+  left: 810px;
 }
 
 .line-celeste2 {
-  width: 1885px;
+  width: 1760px;
   height: 5px;
   background-color: #1288a0;
   position: relative;
@@ -377,7 +378,7 @@ html {
   transform: rotate(50deg);
   position: relative;
   right: 180px;
-  top: 1610px;
+  top: 1675px;
 }
 
 @media (max-width: 768px) {
@@ -565,7 +566,7 @@ html {
     transform: rotate(10deg);
   }
   .line-aqua2 {
-    width: 590px;
+    width: 440px;
     left: 145px;
     top: 1870px;
     transform: rotate(120deg);
