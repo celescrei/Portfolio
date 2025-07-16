@@ -16,17 +16,18 @@
 <body>
     <!-- Nav superior -->
     <header class="header">
-        <div>
-            <h1 class="nombre">Creimer Celeste</h1>
-        </div>
-        <div>
-            <nav>
-                <a href="index.html" class="nav-link">House</a>
-                <a href="#sectionpr" class="nav-link">Projects</a>
-                <a href="#sectionedu" class="nav-link">Education</a>
-                <a href="contacto.html" class="nav-link">Contact</a>
-            </nav>
-        </div>
+        <h1 class="nombre">Creimer Celeste</h1>
+        
+        <button type="button" class="abrir-menu">
+            ☰
+        </button>
+        
+        <nav>
+            <a href="index.html" class="nav-link">House</a>
+            <a href="#sectionpr" class="nav-link">Projects</a>
+            <a href="#sectionedu" class="nav-link">Education</a>
+            <a href="contacto.html" class="nav-link">Contact</a>
+        </nav>
     </header>
 
         <!-- Decoracion -->
@@ -48,7 +49,7 @@
         <div class="sobre-mi">
             <div class="descarga">
                 <h2 class="presentacion">Presentation</h2>
-                <p>¡Hello! I'm Creimer Celeste, web designer's studient, I'm looking to become a professional in web sites design.</p>
+                <p>Hello! I'm Creimer Celeste, web designer's studient, I'm looking to become a professional in web sites design.</p>
                 <a download="Creimer Celeste - CV" href="assets/pdf/CREIMER CELESTE - CV.pdf" class="button"> Download CV</a>
 
             </div>
@@ -132,5 +133,16 @@
         </div>
     </footer>
 
+    <!-- Script de menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.querySelector(".abrir-menu");
+            const nav = document.querySelector("header nav");
+        
+            menuBtn.addEventListener("click", function () {
+                nav.classList.toggle("mostrar-menu");
+            });
+        });
+    </script>
 </body>
 </html>

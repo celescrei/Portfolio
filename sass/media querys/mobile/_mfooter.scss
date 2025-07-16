@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    footer {
+        margin: 40px 20px;
+
+        nav {
+            flex-direction: column;
+            gap: 20px;
+
+            .nav-link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

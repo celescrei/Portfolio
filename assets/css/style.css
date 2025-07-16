@@ -24,6 +24,9 @@ body .header h1 {
   font-size: 3rem;
   letter-spacing: 2px;
 }
+body .header .abrir-menu {
+  display: none;
+}
 body .header nav {
   display: flex;
   position: relative;
@@ -379,4 +382,196 @@ html {
   position: relative;
   right: 180px;
   top: 1610px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header .abrir-menu {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  .header nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .header nav.mostrar-menu {
+    display: flex !important;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    margin: 40px 20px;
+  }
+  footer nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer nav .nav-link {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;
+    margin: 60px 20px;
+    gap: 30px;
+  }
+  .inicio .fotocc {
+    height: 250px;
+    width: 100%;
+  }
+  .inicio .sobre-mi .descarga .presentacion {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .inicio .sobre-mi .descarga p {
+    text-align: center;
+  }
+  .inicio .sobre-mi .descarga .button {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .inicio .sobre-mi .links-contacto {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .inicio .sobre-mi .links-contacto .gh, .inicio .sobre-mi .links-contacto .in {
+    height: 50px;
+  }
+  .proyectos .dpl-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .proyectos .dpl-row .containerxt {
+    text-align: center;
+  }
+  .proyectos .dpl-row .containerxt .xplorat {
+    font-size: 1.5rem;
+  }
+  .proyectos .dpl-row .containerxt p {
+    max-width: 90%;
+    margin: auto;
+  }
+  .proyectos .dpl-row .containerxt .linkxt {
+    font-size: 1rem;
+  }
+  .proyectos .dpl-row .foto-py {
+    margin: 0;
+  }
+  .proyectos .dpl-row .foto-py .slider {
+    width: 100%;
+    height: 250px;
+  }
+  .proyectos .dpl-row .foto-py .slider .img-proyect {
+    -o-object-fit: 1.5rem;
+       object-fit: 1.5rem;
+  }
+  .proyectos .dpl-row .foto-py #prev, .proyectos .dpl-row .foto-py #next {
+    font-size: 1.5rem;
+  }
+  .sectionedu {
+    padding: 40px 20px;
+  }
+  .sectionedu .tituloedu {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  .sectionedu .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionedu .container .containersm {
+    width: 100%;
+  }
+  .sectionedu .logo-vsc,
+  .sectionedu .logo-html,
+  .sectionedu .logo-css,
+  .sectionedu .logo-js {
+    height: 60px;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .contacto .container {
+    margin: 20px;
+    width: 100%;
+  }
+  .contacto .container .contact-me h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contacto .container .contact-me p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .contacto .input-group {
+    width: 100%;
+  }
+  .contacto .info-contact {
+    align-items: center;
+  }
+  .contacto .info-contact .ilustracion {
+    height: 180px;
+  }
+  .contacto .info-contact .logos-contact {
+    align-items: center;
+  }
+  .contacto .info-contact .logos-contact .socialm {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contacto .info-contact .logos-contact .socialm img {
+    height: 60px;
+    width: auto;
+  }
+}
+@media (max-width: 764px) {
+  .line-aqua {
+    width: 473px;
+    left: 10px;
+    bottom: 170px;
+    transform: rotate(35deg);
+  }
+  .line-celoscuro {
+    width: 515px;
+    right: 40px;
+    transform: rotate(150deg);
+  }
+  .line-celeste {
+    width: 450px;
+    left: 0;
+    transform: rotate(10deg);
+  }
+  .line-aqua2 {
+    width: 590px;
+    left: 0;
+    top: 2000px;
+    transform: rotate(120deg);
+  }
+  .line-celeste2 {
+    width: 700px;
+    top: 500px;
+    transform: rotate(35deg);
+  }
+  .line-celoscuro2 {
+    width: 760px;
+    transform: rotate(50deg);
+  }
 }/*# sourceMappingURL=style.css.map */

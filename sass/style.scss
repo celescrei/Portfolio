@@ -5,3 +5,10 @@
 @use 'pages/contacto';
 
 @use 'deco/deco';
+
+
+@use 'media querys/mobile/mgral';
+@use 'media querys/mobile/mfooter';
+@use 'media querys/mobile/mindex';
+@use 'media querys/mobile/mcontacto';
+@use 'media querys/mobile/mdeco';
