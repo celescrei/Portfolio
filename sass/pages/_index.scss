@@ -9,11 +9,11 @@ html {
     align-items: center;
     justify-content: space-between;
     margin: 100px 300px;
+    position: relative;
 
     .fotocc {
         height: 400px;
         border-radius: 24px;
-        position: relative;
     }
 
     .sobre-mi {
@@ -21,7 +21,6 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
 
             .presentacion {
                 font-family: 'Bebas Neue', sans-serif;
@@ -61,7 +60,6 @@ html {
             display: flex;
             gap: 20px;
             justify-content: center;
-            position: relative;
 
             .gh,
             .in {
@@ -80,6 +78,7 @@ html {
     text-align: center;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     .my-proyects {
         font-family: 'Bebas Neue',sans-serif;
@@ -95,7 +94,6 @@ html {
         gap: 100px;
 
         .containerxt {
-            position: relative;
             .xplorat {
                 font-family: 'Bebas Neue', sans-serif;
                 font-size: 2rem;
@@ -119,13 +117,10 @@ html {
             flex-direction: column;
             margin: 40px;
 
-            
-
             .slider {
                 width: 700px;
                 height: 500px;
                 overflow: hidden;
-                position: relative;
                 border-radius: 10px;
 
                 .slider-track {
@@ -166,6 +161,7 @@ html {
 // Mi Educacion //
 .sectionedu {
     padding: 70px;
+    position: relative;
 
     .tituloedu {
         font-family: 'Bebas Neue', sans-serif;
