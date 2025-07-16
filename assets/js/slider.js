@@ -1,3 +1,4 @@
+
 const track = document.querySelector('.slider-track');
 const slides = document.querySelectorAll('.img-proyect');
 const prev = document.getElementById('prev');
