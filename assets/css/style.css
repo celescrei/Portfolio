@@ -16,6 +16,8 @@ body .header {
   justify-content: space-between;
   position: relative;
   padding: 40px;
+  position: relative;
+  z-index: 10;
 }
 body .header h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -24,11 +26,13 @@ body .header h1 {
 }
 body .header nav {
   display: flex;
+  position: relative;
 }
 body .header nav .nav-link {
   color: white;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
+  font-size: 1.2rem;
   text-decoration: none;
   padding-right: 10px;
 }
@@ -247,6 +251,7 @@ html {
   text-align: start;
   margin: 60px;
   gap: 20px;
+  width: 600px;
 }
 .contacto .container .contact-me h1 {
   margin: 20px 0;
@@ -262,7 +267,7 @@ html {
 }
 .contacto .input-group {
   height: 50px;
-  width: 700px;
+  width: 580px;
 }
 .contacto .boton {
   margin-top: 25px;
@@ -280,16 +285,33 @@ html {
   background-color: #009db7;
 }
 .contacto .info-contact {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .contacto .info-contact .ilustracion {
-  height: 200px;
+  height: 250px;
+  margin-top: 20px;
 }
 .contacto .info-contact .logos-contact {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.contacto .info-contact .logos-contact img {
-  height: 100px;
+.contacto .info-contact .logos-contact .socialm {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contacto .info-contact .logos-contact .socialm p {
+  color: #193035;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.contacto .info-contact .logos-contact .socialm img {
+  height: 70px;
+  width: 80px;
 }
 
 .line-aqua {

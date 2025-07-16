@@ -7,13 +7,13 @@
     display: flex;
     padding: 20px;
 
-
     .container {
         display: flex;
         flex-direction: column;
         text-align: start;
         margin: 60px;
         gap: 20px;
+        width: 600px;
 
         .contact-me {
             h1 {
@@ -33,7 +33,7 @@
 
     .input-group {
         height: 50px;
-        width: 700px;
+        width: 580px;
     }
 
     .boton {
@@ -54,16 +54,38 @@
     }
 
     .info-contact {
+        display: flex;
+        flex-direction: column;
         gap: 20px; 
 
         .ilustracion {
-            height: 200px;
+            height: 250px;
+            margin-top: 20px;
         }
 
         .logos-contact {
-            display: flex;
-            img {
-                height: 100px;
+            display: flex;            
+            flex-direction: column;
+            gap: 20px;
+            
+
+            .socialm {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                p {
+                    color: #193035;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.2rem;
+                    margin-bottom: 0;
+                }
+                
+
+                img {
+                    height: 70px;
+                    width: 80px;
+                }
             }
         }
         
