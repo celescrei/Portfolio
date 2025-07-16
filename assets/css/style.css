@@ -83,14 +83,14 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .inicio .sobre-mi .descarga .presentacion {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  -webkit-text-decoration: underline 3.5px #00c5e4;
-          text-decoration: underline 3.5px #00c5e4;
+  text-decoration: underline 3.5px #00c5e4;
 }
 .inicio .sobre-mi .descarga p {
   max-width: 300px;
@@ -117,6 +117,7 @@ html {
   display: flex;
   gap: 20px;
   justify-content: center;
+  position: relative;
 }
 .inicio .sobre-mi .links-contacto .gh,
 .inicio .sobre-mi .links-contacto .in {
@@ -135,8 +136,7 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   letter-spacing: 2px;
-  -webkit-text-decoration: underline 4px #00c5e4;
-          text-decoration: underline 4px #00c5e4;
+  text-decoration: underline 4px #00c5e4;
 }
 .proyectos .dpl-row {
   display: flex;
@@ -180,8 +180,7 @@ html {
 .proyectos .dpl-row .fotos-py .slider .img-proyect {
   min-width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .proyectos .dpl-row .fotos-py #prev, .proyectos .dpl-row .fotos-py #next {
   position: absolute;
@@ -207,8 +206,7 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   letter-spacing: 2px;
-  -webkit-text-decoration: underline 4px #00c5e4;
-          text-decoration: underline 4px #00c5e4;
+  text-decoration: underline 4px #00c5e4;
   text-align: center;
   margin: 40px;
 }
@@ -315,14 +313,14 @@ html {
 }
 
 .line-aqua {
-  width: 510px;
+  width: 310px;
   height: 5px;
   background-color: aqua;
   transform: rotate(35deg);
-  left: 1230px;
+  left: 1240px;
   position: relative;
   border-radius: 5px;
-  bottom: 10px;
+  bottom: 70px;
 }
 
 .line-celoscuro {
@@ -336,29 +334,29 @@ html {
 }
 
 .line-celeste {
-  width: 900px;
+  width: 1200px;
   height: 5px;
   background-color: #207f92;
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 420px;
-  left: 1020px;
+  top: 230px;
+  left: 705px;
 }
 
 .line-aqua2 {
-  width: 790px;
+  width: 700px;
   height: 5px;
   background-color: aqua;
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1660px;
-  left: 1110px;
+  top: 1460px;
+  left: 995px;
 }
 
 .line-celeste2 {
-  width: 2075px;
+  width: 1885px;
   height: 5px;
   background-color: #1288a0;
   position: relative;
@@ -369,7 +367,7 @@ html {
 }
 
 .line-celoscuro2 {
-  width: 1000px;
+  width: 830px;
   height: 5px;
   border-radius: 5px;
   background-color: #009db7;
@@ -377,4 +375,6 @@ html {
   position: relative;
   right: 180px;
   top: 1610px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
