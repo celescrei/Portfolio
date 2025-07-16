@@ -480,12 +480,18 @@ html {
     width: 300px;
     height: 300px;
   }
-  .proyectos .dpl-row .fotos-py .slider .silder-track .img-proyect {
+  .proyectos .dpl-row .fotos-py .slider .slider-track .img-proyect {
     width: 90px;
   }
   .proyectos .dpl-row .fotos-py #prev, .proyectos .dpl-row .fotos-py #next {
     font-size: 1.5rem;
     top: 360px;
+  }
+  .proyectos .dpl-row .fotos-py #prev#prev, .proyectos .dpl-row .fotos-py #next#prev {
+    left: 20px;
+  }
+  .proyectos .dpl-row .fotos-py #prev#next, .proyectos .dpl-row .fotos-py #next#next {
+    right: 20px;
   }
   .sectionedu {
     padding: 0 45px;
