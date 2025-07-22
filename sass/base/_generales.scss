@@ -15,10 +15,11 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: relative;
+        position: sticky;
         padding: 40px;
-        position: relative;
-        z-index: 10;
+        z-index: 1000;
+        top: 0;
+        background-color: #193035;
 
         h1 {
             font-family: 'Bebas Neue', sans-serif;

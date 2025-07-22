@@ -14,10 +14,11 @@ body .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: sticky;
   padding: 40px;
-  position: relative;
-  z-index: 10;
+  z-index: 1000;
+  top: 0;
+  background-color: #193035;
 }
 body .header h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -427,8 +428,8 @@ html {
     gap: 30px;
   }
   .inicio .fotocc {
-    height: 250px;
-    width: 100%;
+    height: 100%;
+    width: 90%;
   }
   .inicio .sobre-mi .descarga .presentacion {
     font-size: 2rem;
@@ -475,23 +476,38 @@ html {
   }
   .proyectos .dpl-row .fotos-py {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .proyectos .dpl-row .fotos-py .slider {
+    position: relative;
     width: 300px;
     height: 300px;
+    overflow: hidden;
+  }
+  .proyectos .dpl-row .fotos-py .slider .slider-track {
+    display: flex;
+    transition: 0.5s ease-in-out;
   }
   .proyectos .dpl-row .fotos-py .slider .slider-track .img-proyect {
-    width: 90px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .proyectos .dpl-row .fotos-py #prev, .proyectos .dpl-row .fotos-py #next {
     font-size: 1.5rem;
-    top: 360px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 2;
   }
-  .proyectos .dpl-row .fotos-py #prev#prev, .proyectos .dpl-row .fotos-py #next#prev {
-    left: 20px;
+  .proyectos .dpl-row .fotos-py #prev {
+    left: 10px !important;
   }
-  .proyectos .dpl-row .fotos-py #prev#next, .proyectos .dpl-row .fotos-py #next#next {
-    right: 20px;
+  .proyectos .dpl-row .fotos-py #next {
+    right: 10px;
   }
   .sectionedu {
     padding: 0 45px;
