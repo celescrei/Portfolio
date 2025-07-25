@@ -356,19 +356,19 @@ html {
   position: relative;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1570px;
-  left: 910px;
+  top: 1415px;
+  left: 1055px;
 }
 
 .line-celeste2 {
-  width: 1760px;
+  width: 2020px;
   height: 5px;
   background-color: #1288a0;
   position: relative;
   border-radius: 5px;
   transform: rotate(35deg);
-  top: 1200px;
-  right: 190px;
+  top: 800px;
+  right: 180px;
 }
 
 .line-celoscuro2 {
@@ -379,7 +379,7 @@ html {
   transform: rotate(50deg);
   position: relative;
   right: 180px;
-  top: 1675px;
+  top: 1520px;
 }
 
 @media (max-width: 768px) {
