@@ -24,6 +24,7 @@ body .header h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   letter-spacing: 2px;
+  color: white;
 }
 body .header .abrir-menu {
   display: none;
@@ -72,6 +73,7 @@ html {
 }
 
 .inicio {
+  color: white;
   display: flex;
   text-align: center;
   align-items: center;
@@ -142,6 +144,7 @@ html {
   letter-spacing: 2px;
   -webkit-text-decoration: underline 4px #00c5e4;
           text-decoration: underline 4px #00c5e4;
+  color: white;
 }
 .proyectos .dpl-row {
   display: flex;
@@ -157,6 +160,7 @@ html {
 .proyectos .dpl-row .containerxt p {
   font-family: "Montserrat", sans-serif;
   max-width: 500px;
+  color: white;
 }
 .proyectos .dpl-row .containerxt .linkxt {
   font-size: 1rem;
@@ -213,30 +217,46 @@ html {
   -webkit-text-decoration: underline 4px #00c5e4;
           text-decoration: underline 4px #00c5e4;
   text-align: center;
-  margin: 40px;
+  margin-bottom: 80px;
+  color: white;
 }
 .sectionedu .container {
   font-family: "Montserrat", sans-serif;
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin: 20px auto;
+  margin: 80px auto;
+  color: white;
 }
 .sectionedu .container .containersm {
   width: 400px;
+  display: flex;
+  gap: 60px;
+}
+.sectionedu .container .containersm .contenido-courses {
+  margin: 0;
+  line-height: 0;
+}
+.sectionedu .container .containersm .years {
+  color: aqua;
+  font-size: 1.5rem;
+}
+.sectionedu .container .containersm .years p {
+  margin: 0;
+  line-height: 1.2;
 }
 .sectionedu .container .containersm .encabezado {
   font-weight: bold;
   font-size: 1.5rem;
 }
 .sectionedu .logo-vsc {
-  height: 80px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
 }
 .sectionedu .logo-html,
 .sectionedu .logo-css,
 .sectionedu .logo-js {
-  height: 80px;
+  height: 40px;
 }
 
 .contacto {
@@ -294,7 +314,7 @@ html {
 }
 .contacto .info-contact .ilustracion {
   height: 250px;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 .contacto .info-contact .logos-contact {
   display: flex;
@@ -313,73 +333,71 @@ html {
   margin-bottom: 0;
 }
 .contacto .info-contact .logos-contact .socialm img {
-  height: 70px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
 }
 
-.line-aqua {
-  width: 310px;
+.decoracion {
+  position: relative;
+}
+.decoracion .line-aqua {
+  width: 800px;
   height: 5px;
   background-color: aqua;
   transform: rotate(35deg);
-  left: 1225px;
-  position: relative;
+  position: absolute;
   border-radius: 5px;
-  bottom: 100px;
+  bottom: 0px;
+  left: 790px;
 }
-
-.line-celoscuro {
+.decoracion .line-celoscuro {
   width: 1600px;
   height: 5px;
   border-radius: 5px;
   background-color: #009db7;
   transform: rotate(150deg);
-  position: relative;
+  position: absolute;
   right: 200px;
 }
-
-.line-celeste {
-  width: 1200px;
+.decoracion .line-celeste {
+  width: 1000px;
   height: 5px;
   background-color: #207f92;
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 230px;
-  left: 590px;
+  top: 450px;
+  left: 765px;
 }
-
-.line-aqua2 {
-  width: 800px;
+.decoracion .line-aqua2 {
+  width: 1750px;
   height: 5px;
   background-color: aqua;
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   transform: rotate(120deg);
-  top: 1415px;
-  left: 1055px;
+  top: 1915px;
+  left: 205px;
 }
-
-.line-celeste2 {
-  width: 2020px;
+.decoracion .line-celeste2 {
+  width: 1450px;
   height: 5px;
   background-color: #1288a0;
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   transform: rotate(35deg);
-  top: 800px;
-  right: 180px;
+  top: 650px;
+  right: 200px;
 }
-
-.line-celoscuro2 {
-  width: 600px;
+.decoracion .line-celoscuro2 {
+  width: 1700px;
   height: 5px;
   border-radius: 5px;
   background-color: #009db7;
   transform: rotate(50deg);
-  position: relative;
-  right: 180px;
-  top: 1520px;
+  position: absolute;
+  right: 150px;
+  top: 2020px;
 }
 
 @media (max-width: 768px) {

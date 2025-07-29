@@ -1,64 +1,68 @@
-.line-aqua {
-    width: 310px;
-    height: 5px;
-    background-color: aqua;
-    transform: rotate(35deg);
-    left: 1225px;
+.decoracion {
     position: relative;
-    border-radius: 5px;
-    bottom: 100px;
-}
 
-.line-celoscuro {
-    width: 1600px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #009db7;
-    transform: rotate(150deg);
-    position: relative;
-    right: 200px;
-}
+    .line-aqua {
+        width: 800px;
+        height: 5px;
+        background-color: aqua;
+        transform: rotate(35deg);
+        position: absolute;
+        border-radius: 5px;
+        bottom: 0px;
+        left: 790px;
+    }
 
-.line-celeste {
-    width: 1200px;
-    height: 5px;
-    background-color: #207f92;
-    position: relative;
-    border-radius: 5px;
-    transform: rotate(120deg);
-    top: 230px;
-    left: 590px;
-}
+    .line-celoscuro {
+        width: 1600px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #009db7;
+        transform: rotate(150deg);
+        position: absolute;
+        right: 200px;
+    }
 
-.line-aqua2 {
-    width: 800px;
-    height: 5px;
-    background-color: aqua;
-    position: relative;
-    border-radius: 5px;
-    transform: rotate(120deg);
-    top: 1415px;
-    left: 1055px;
-}
+    .line-celeste {
+        width: 1000px;
+        height: 5px;
+        background-color: #207f92;
+        position: absolute;
+        border-radius: 5px;
+        transform: rotate(120deg);
+        top: 450px;
+        left: 765px;
+    }
 
-.line-celeste2 {
-    width: 2020px;
-    height: 5px;
-    background-color: #1288a0;
-    position: relative;
-    border-radius: 5px;
-    transform: rotate(35deg);
-    top: 800px;
-    right: 180px;
-}
+    .line-aqua2 {
+        width:1750px;
+        height: 5px;
+        background-color: aqua;
+        position: absolute;
+        border-radius: 5px;
+        transform: rotate(120deg);
+        top: 1915px;
+        left: 205px;
+    }
 
-.line-celoscuro2 {
-    width: 600px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #009db7;
-    transform: rotate(50deg);
-    position: relative;
-    right: 180px;
-    top: 1520px;
+    .line-celeste2 {
+        width: 1450px;
+        height: 5px;
+        background-color: #1288a0;
+        position: absolute;
+        border-radius: 5px;
+        transform: rotate(35deg);
+        top: 650px;
+        right: 200px;
+    }
+
+    .line-celoscuro2 {
+        width: 1700px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #009db7;
+        transform: rotate(50deg);
+        position: absolute;
+        right: 150px;
+        top: 2020px;
+    }
 }

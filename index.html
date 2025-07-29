@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/slider.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 
     <!-- Google Fonts -->
@@ -26,12 +27,12 @@
             <a href="index.html" class="nav-link">Home</a>
             <a href="#sectionpr" class="nav-link">Projects</a>
             <a href="#sectionedu" class="nav-link">Education</a>
-            <a href="contacto.html" class="nav-link">Contact</a>
+            <a href="#sectioncontact" class="nav-link">Contact</a>
         </nav>
     </header>
 
         <!-- Decoracion -->
-    <section>
+    <section class="decoracion">
         <div class="line-celeste"></div>
         <div class="line-celoscuro"></div>
         <div class="line-aqua"></div>
@@ -49,7 +50,7 @@
         <div class="sobre-mi">
             <div class="descarga">
                 <h2 class="presentacion">About Me</h2>
-                <p>Hello! I'm Creimer Celeste, web designer's studient, I'm looking to become a professional in web sites design.</p>
+                <p>Hello! I'm Celeste Creimer, web designer's studient, I'm looking to become a professional in web sites design.</p>
                 <a download="Creimer Celeste - CV" href="assets/pdf/CREIMER CELESTE - CV.pdf" class="button"> Download CV</a>
 
             </div>
@@ -93,40 +94,120 @@
         <div>
             <div class="container">
                 <div class="containersm">
-                    <h3 class="encabezado">Web Design Course</h3>
-                    <p>Coderhouse</p>
-                    <p>2024 - 2025</p>
-                    <div class="logos">
-                        <img src="assets/img/logo-vsc.png" alt="Logo Visual Studio Code" class="logo-vsc">
-                        <img src="assets/img/logo-html.png" alt="Logo html" class="logo-html">
-                        <img src="assets/img/logo-css.png" alt="Logo css" class="logo-css">
-                        <img src="assets/img/logo-js.png" alt="Logo js" class="logo-js">
+                    <div class="years">
+                        <p>2024</p>
+                        <p>2025</p>
+                    </div>
+                    <div class="contenido-courses">
+                        <h3 class="encabezado">Web Design Course</h3>
+                        <p>Coderhouse</p>
+                        <div class="logos">
+                            <img src="assets/img/logo-vsc.png" alt="Logo Visual Studio Code" class="logo-vsc">
+                            <img src="assets/img/logo-html.png" alt="Logo html" class="logo-html">
+                            <img src="assets/img/logo-css.png" alt="Logo css" class="logo-css">
+                            <img src="assets/img/logo-js.png" alt="Logo js" class="logo-js">
+                        </div>
                     </div>
                 </div>
 
                 <div class="containersm">
-                    <h3 class="encabezado">Adobe Illustrator Course</h3>
-                    <p>Coderhouse</p>
-                    <p>2022 - 2024</p>
+                    <div class="years">
+                        <p>2022</p>
+                        <p>2024</p>
+                    </div>
+                    <div>
+                        <h3 class="encabezado">Adobe Illustrator Course</h3>
+                        <p>Coderhouse</p>
+                    </div>
                 </div>
             </div>
             <div class="container">
                 <div class="containersm"> 
-                    <h3 class="encabezado">English course</h3>
-                    <p>Cemf Instituto de Inglés</p>
-                    <p>2022 - 2023 -> B1</p>
+                    <div class="years">
+                        <p>2022</p>
+                        <p>2023</p>
+                    </div>
+                    <div>
+                        <h3 class="encabezado">English course -> B1</h3>
+                        <p>Cemf Instituto de Inglés</p>
+                    </div>
+
                 </div>
 
                 <div class="containersm">
-                    <h3 class="encabezado">Secondary School Complete</h3>
-                    <p>Instituto José Hernández</p>
-                    <p>2014 - 2020</p>
+                    <div class="years">
+                        <p>2014</p>
+                        <p>2020</p>
+                    </div>
+                    <div>
+                        <h3 class="encabezado">Secondary School Complete</h3>
+                        <p>Instituto José Hernández</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Outro -->
+    <!-- Contacto -->
+    <section class="contacto">
+        <div class="container">
+            <div class="contact-me">
+                <h1 id="sectioncontact">Contact me!</h1>
+                <p>Do you have an idea or a project? You can write or find me on my social medias for a personalized attention. I'm open for new projects and colabs!</p>
+            </div>
+            <div class="contact-inputs">
+                <form action="https://formsubmit.co/creimerwork@gmail.com" method="POST" class="formulario-mail">
+
+                    <!-- input nombre y apellido -->
+                    <div class="input-group mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username">
+                    </div>
+
+                    <!-- input email -->
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Username">
+                    </div>
+
+                    <!-- input comentario -->
+                    <div class="input-group">
+                        <textarea name="message" class="form-control" placeholder="Put your comment..." aria-label="With textarea"></textarea>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="submit" value="Send" class="boton">
+                </form>
+            </div>
+        </div>
+        <div class="info-contact">
+            <div>
+                <img src="assets/img/ilustracion.png" alt="ilustracion" class="ilustracion">
+            </div>
+            <div class="logos-contact">
+                
+                <!-- telefono -->
+                <div class="socialm">
+                    <img src="assets/img/logo-wpp.png" alt="wpp" class="logos">
+                    <p>11-3011-2377</p>
+                </div>
+
+                <!-- email -->
+                <div class="socialm">
+                    <img src="assets/img/logo-email.png" alt="email" class="logos">
+                    <p>creimerwork@gmail.com</p>
+                </div>
+                
+                <!-- linkedin -->
+                <div class="socialm">
+                    <img src="assets/img/logo-linkedin.png" alt="logo-linkedin" class="logos">
+                    <p>celeste creimer</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 
     <!-- Script de menu -->
