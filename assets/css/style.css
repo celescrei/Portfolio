@@ -401,15 +401,14 @@ html {
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
+  body .header {
     gap: 20px;
-    text-align: center;
+    align-items: center;
   }
-  .header h1 {
+  body .header h1 {
     font-size: 2rem;
   }
-  .header .abrir-menu {
+  body .header .abrir-menu {
     display: block;
     background: none;
     border: none;
@@ -417,13 +416,13 @@ html {
     color: white;
     cursor: pointer;
   }
-  .header nav {
+  body .header nav {
     display: none;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
   }
-  .header nav.mostrar-menu {
+  body .header nav.mostrar-menu {
     display: flex !important;
   }
 }
@@ -589,34 +588,34 @@ html {
   }
 }
 @media (max-width: 764px) {
-  .line-aqua {
+  .decoracion .line-aqua {
     width: 473px;
     left: 10px;
     bottom: 190px;
     transform: rotate(35deg);
   }
-  .line-celoscuro {
+  .decoracion .line-celoscuro {
     width: 515px;
     right: 40px;
     transform: rotate(150deg);
   }
-  .line-celeste {
+  .decoracion .line-celeste {
     width: 450px;
     left: 0;
     transform: rotate(10deg);
   }
-  .line-aqua2 {
+  .decoracion .line-aqua2 {
     width: 440px;
     left: 145px;
     top: 1870px;
     transform: rotate(120deg);
   }
-  .line-celeste2 {
+  .decoracion .line-celeste2 {
     width: 700px;
     top: 500px;
     transform: rotate(35deg);
   }
-  .line-celoscuro2 {
+  .decoracion .line-celoscuro2 {
     width: 760px;
     transform: rotate(50deg);
   }

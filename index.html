@@ -18,11 +18,7 @@
     <!-- Nav superior -->
     <header class="header">
         <h1 class="nombre">Celeste Creimer</h1>
-        
-        <button type="button" class="abrir-menu">
-            ☰
-        </button>
-        
+        <button type="button" class="abrir-menu">☰</button>
         <nav>
             <a href="index.html" class="nav-link">Home</a>
             <a href="#sectionpr" class="nav-link">Projects</a>
@@ -211,15 +207,6 @@
 
 
     <!-- Script de menu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuBtn = document.querySelector(".abrir-menu");
-            const nav = document.querySelector("header nav");
-        
-            menuBtn.addEventListener("click", function () {
-                nav.classList.toggle("mostrar-menu");
-            });
-        });
-    </script>
+    <script src="assets/js/menu.js" defer></script>
 </body>
 </html>

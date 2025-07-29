@@ -1,40 +1,43 @@
 @media (max-width:764px) {
-    .line-aqua {
-        width: 473px;
-        left: 10px;
-        bottom: 190px;
-        transform: rotate(35deg);
-    }
+    .decoracion {
+        .line-aqua {
+            width: 473px;
+            left: 10px;
+            bottom: 190px;
+            transform: rotate(35deg);
+        }
 
-    .line-celoscuro {
-        width: 515px;
-        right: 40px;
-        transform: rotate(150deg);
-    }
+        .line-celoscuro {
+            width: 515px;
+            right: 40px;
+            transform: rotate(150deg);
+        }
 
-    .line-celeste {
-        width: 450px;
-        left: 0;
-        transform: rotate(10deg);
-    }
+        .line-celeste {
+            width: 450px;
+            left: 0;
+            transform: rotate(10deg);
+        }
 
-    .line-aqua2 {
-        width: 440px;
-        left: 145px;
-        top: 1870px;
-        transform: rotate(120deg);
-    }
+        .line-aqua2 {
+            width: 440px;
+            left: 145px;
+            top: 1870px;
+            transform: rotate(120deg);
+        }
 
-    .line-celeste2 {
-        width: 700px;
-        top: 500px;
-        transform: rotate(35deg);
-    }
+        .line-celeste2 {
+            width: 700px;
+            top: 500px;
+            transform: rotate(35deg);
+        }
 
-    .line-celoscuro2 {
-        width: 760px;
-        transform: rotate(50deg);
+        .line-celoscuro2 {
+            width: 760px;
+            transform: rotate(50deg);
+        }
     }
+    
 
 }
 
