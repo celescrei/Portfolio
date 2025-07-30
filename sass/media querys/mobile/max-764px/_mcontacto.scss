@@ -15,7 +15,7 @@
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     text-align: center;
                 }
             }
@@ -23,6 +23,7 @@
 
         .input-group {
             width: 100%;
+            height: 90%;
         }
 
         .info-contact {
@@ -33,15 +34,17 @@
             }
 
             .logos-contact {
-                align-items: center;
-
+                margin: 20px 40px;
                 .socialm {
-                    flex-direction: column;
-                    text-align: center;
-
+                    flex-direction: row;
+                    
                     img {
-                        height: 60px;
-                        width: auto;
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
                     }
                 }
             }

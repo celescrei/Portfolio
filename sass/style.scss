@@ -1,11 +1,14 @@
 @use 'base/generales';
 @use 'base/footer';
+@use 'base/aditional-styles';
 @use 'pages/index';
 @use 'pages/contacto';
 @use 'deco/deco';
 
-@use 'media querys/mobile/mgral';
-@use 'media querys/mobile/mfooter';
-@use 'media querys/mobile/mindex';
-@use 'media querys/mobile/mcontacto';
-@use 'media querys/mobile/mdeco';
+@use 'media querys/mobile/add-styles';
+@use 'media querys/mobile/max-764px/mgral';
+@use 'media querys/mobile/max-764px/mfooter';
+@use 'media querys/mobile/max-764px/mindex';
+@use 'media querys/mobile/max-764px/mcontacto';
+@use 'media querys/mobile/max-764px/mdeco';
+

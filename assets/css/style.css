@@ -16,7 +16,7 @@ body .header {
   justify-content: space-between;
   position: sticky;
   padding: 40px;
-  z-index: 1000;
+  z-index: 40;
   top: 0;
   background-color: #193035;
 }
@@ -28,12 +28,18 @@ body .header h1 {
 }
 body .header .abrir-menu {
   display: none;
-}
-body .header nav {
-  display: flex;
+  z-index: 60;
   position: relative;
 }
-body .header nav .nav-link {
+body .header .abrir-menu:hover {
+  color: #00c5e4;
+}
+body .header .menu-nav .nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+body .header .menu-nav .nav-list .nav-link {
   color: white;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -41,7 +47,7 @@ body .header nav .nav-link {
   text-decoration: none;
   padding-right: 10px;
 }
-body .header nav .nav-link:hover {
+body .header .menu-nav .nav-list .nav-link:hover {
   color: #00c5e4;
 }
 
@@ -66,6 +72,22 @@ footer nav .nav-link {
 }
 footer nav .nav-link:hover {
   color: #00c5e4;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 45;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-overlay.mostrar-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 html {
@@ -400,6 +422,21 @@ html {
   top: 2020px;
 }
 
+.cerrar-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 60;
+}
+.cerrar-menu:hover {
+  color: #00c5e4;
+}
+
 @media (max-width: 768px) {
   body .header {
     gap: 20px;
@@ -415,15 +452,39 @@ html {
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    z-index: 60;
+    position: relative;
   }
-  body .header nav {
-    display: none;
+  body .header .menu-nav {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #207f92;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 50;
   }
-  body .header nav.mostrar-menu {
-    display: flex !important;
+  body .header .menu-nav.mostrar-menu {
+    transform: translateX(0);
+  }
+  body .header .menu-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-items: flex-end;
+    margin-top: 60px;
+  }
+  body .header .menu-nav .nav-list .nav-link {
+    font-size: 1.5rem;
+    transition: all 0.3s aease;
+  }
+  body .header .menu-nav .nav-list .nav-link:hover {
+    color: #00c5e4;
+    transform: translateX(-10px);
   }
 }
 @media (max-width: 768px) {
@@ -446,7 +507,7 @@ html {
   }
   .inicio .fotocc {
     height: 100%;
-    width: 90%;
+    width: 60%;
   }
   .inicio .sobre-mi .descarga .presentacion {
     font-size: 2rem;
@@ -454,6 +515,7 @@ html {
   }
   .inicio .sobre-mi .descarga p {
     text-align: center;
+    font-size: 0.8rem;
   }
   .inicio .sobre-mi .descarga .button {
     width: 60%;
@@ -487,6 +549,7 @@ html {
   .proyectos .dpl-row .containerxt p {
     max-width: 90%;
     margin: auto;
+    font-size: 0.8rem;
   }
   .proyectos .dpl-row .containerxt .linkxt {
     font-size: 1rem;
@@ -540,11 +603,17 @@ html {
   .sectionedu .container .containersm {
     width: 100%;
   }
+  .sectionedu .container .containersm .years {
+    font-size: 1.2rem;
+  }
+  .sectionedu .container .containersm .contenido-courses .encabezado {
+    font-size: 1.5cap;
+  }
   .sectionedu .logo-vsc,
   .sectionedu .logo-html,
   .sectionedu .logo-css,
   .sectionedu .logo-js {
-    height: 60px;
+    height: 35px;
     width: auto;
   }
 }
@@ -563,11 +632,12 @@ html {
     text-align: center;
   }
   .contacto .container .contact-me p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   .contacto .input-group {
     width: 100%;
+    height: 90%;
   }
   .contacto .info-contact {
     align-items: center;
@@ -576,38 +646,41 @@ html {
     height: 150px;
   }
   .contacto .info-contact .logos-contact {
-    align-items: center;
+    margin: 20px 40px;
   }
   .contacto .info-contact .logos-contact .socialm {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
   }
   .contacto .info-contact .logos-contact .socialm img {
-    height: 60px;
-    width: auto;
+    height: 40px;
+    width: 40px;
+  }
+  .contacto .info-contact .logos-contact .socialm p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 764px) {
   .decoracion .line-aqua {
     width: 473px;
-    left: 10px;
-    bottom: 190px;
+    left: 1px;
+    bottom: 10px;
     transform: rotate(35deg);
   }
   .decoracion .line-celoscuro {
     width: 515px;
     right: 40px;
+    top: 100px;
     transform: rotate(150deg);
   }
   .decoracion .line-celeste {
-    width: 450px;
+    width: 427px;
     left: 0;
     transform: rotate(10deg);
   }
   .decoracion .line-aqua2 {
     width: 440px;
-    left: 145px;
-    top: 1870px;
+    left: 94px;
+    top: 2200px;
     transform: rotate(120deg);
   }
   .decoracion .line-celeste2 {

@@ -5,7 +5,7 @@
         gap: 30px;
         .fotocc {
             height: 100%;
-            width: 90%;
+            width: 60%;
         }
 
         .sobre-mi {
@@ -17,6 +17,7 @@
 
                 p {
                     text-align: center;
+                    font-size: 0.8rem;
                 }
 
                 .button {
@@ -57,6 +58,7 @@
                 p {
                     max-width: 90%;
                     margin: auto;
+                    font-size: 0.8rem;
                 }
                 .linkxt {
                     font-size: 1rem;
@@ -114,20 +116,30 @@
             margin: 20px 0;
         }
 
-        .container {
-            flex-direction: column;
-            align-items: center;
+            .container {
+                flex-direction: column;
+                align-items: center;
 
-            .containersm {
-                width: 100%;
+                .containersm {
+                    width: 100%;
+
+                    .years {
+                        font-size: 1.2rem;
+                    }
+
+                    .contenido-courses {
+                        .encabezado {
+                            font-size: 1.5cap;
+                        }
+                    }
+                }
             }
-        }
 
         .logo-vsc,
         .logo-html,
         .logo-css,
         .logo-js {
-            height: 60px;
+            height: 35px;
             width: auto;
         }
     }
