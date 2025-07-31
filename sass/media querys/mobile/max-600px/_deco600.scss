@@ -1,45 +1,38 @@
-@media (max-width:764px) {
+@media (max-width: 600px) {
     .decoracion {
         .line-aqua {
-            width: 473px;
-            left: 250px;
-            top: 115px;
+            width: 300px;
+            left: 255px;
+            top: 81px;
             transform: rotate(35deg);
         }
 
         .line-celoscuro {
             width: 515px;
-            right: 200px;
+            right: 47px;
             top: 100px;
             transform: rotate(150deg);
         }
 
         .line-celeste {
-            width: 685px;
+            width: 533px;
             left: 0;
-            top: 620px;
+            top: 546px;
             transform: rotate(10deg);
         }
 
         .line-aqua2 {
-            max-width: 700px;
-            left: 155px;
-            top: 2200px;
+            width: 440px;
+            left: 198px;
+            top: 2010px;
             transform: rotate(120deg);
         }
 
         .line-celeste2 {
-            width: 780px;
-            top: 1200px;
+            width: 604px;
+            top: 1085px;
             transform: rotate(150deg);
-            right: -48px;
-        }
-
-        .line-celoscuro2 {
-            width: 0;
+            right: -36px;
         }
     }
-    
-
 }
-

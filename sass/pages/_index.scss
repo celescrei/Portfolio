@@ -119,12 +119,14 @@ html {
             display: flex;
             flex-direction: column;
             margin: 40px;
+            position: relative;
 
             .slider {
                 width: 600px;
                 height: 400px;
                 overflow: hidden;
                 border-radius: 10px;
+                
 
                 .slider-track {
                     display: flex;
@@ -136,27 +138,36 @@ html {
                     height: 100%;
                     object-fit: cover;
                 }
+
+                #prev, #next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    font-size: 2rem;
+                    color: #00c5e4;
+                    cursor: pointer;
+                    top: 310px;
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: color 0.3s ease, opacity 0.3s ease;
+
+                    &#prev {
+                        left: -30px;
+                        top: 200px;
+                    }
+
+                    &#next {
+                        right: -30px;
+                        top: 200px;
+                    }
+                }
             }
 
-            #prev, #next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: none;
-                border: none;
-                font-size: 2rem;
-                color: #00c5e4;
-                cursor: pointer;
-                top: 310px;
-
-                &#prev {
-                    left: 720px;
-                }
-
-                &#next {
-                    right: 120px;
-                }
-            }
+            
             
         }
     }

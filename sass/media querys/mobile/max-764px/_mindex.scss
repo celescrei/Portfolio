@@ -70,11 +70,12 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
+
                 .slider {
-                    position: relative;
                     width: 300px;
                     height: 300px;
-                    overflow: hidden;
+                    
                     .slider-track {
                         display: flex;
                         transition: 0.5s ease-in-out;
@@ -85,22 +86,25 @@
                         }
                     }
                     
-                }
+                    #prev, #next {
+                        position: absolute;
+                        transform: translateY(-50%);
+                        z-index: 10;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: color 0.3s ease, opacity 0.3s ease;
 
-                #prev, #next {
-                    font-size: 1.5rem;
-                    top: 50%;
-                    position: absolute;
-                    transform: translateY(-50%);
-                    z-index: 2;
-                }
-                                
-                #prev {
-                    left: 10px !important;
-                }
+                        &#prev {
+                            left: -30px;
+                            top: 140px;
+                        }
 
-                #next {
-                    right: 10px;
+                        &#next {
+                            right: -30px;
+                            top: 140px;
+                        }
+                    }
                 }
             }
         }

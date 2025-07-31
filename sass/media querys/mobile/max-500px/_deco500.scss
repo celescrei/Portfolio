@@ -1,0 +1,38 @@
+@media (max-width:500px) {
+    .decoracion {
+        .line-aqua {
+            width: 400px;
+            left: 65px;
+            top: 50px;
+            transform: rotate(35deg);
+        }
+
+        .line-celoscuro {
+            width: 515px;
+            right: 40px;
+            top: 100px;
+            transform: rotate(150deg);
+        }
+
+        .line-celeste {
+            width: 430px;
+            left: 0;
+            top: 500px;
+            transform: rotate(10deg);
+        }
+
+        .line-aqua2 {
+            width: 440px;
+            left: 100px;
+            top: 2080px;
+            transform: rotate(120deg);
+        }
+
+        .line-celeste2 {
+            width: 490px;
+            top: 1085px;
+            transform: rotate(150deg);
+            right: -30px;
+        }
+    }
+}
